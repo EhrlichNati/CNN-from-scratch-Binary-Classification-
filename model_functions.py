@@ -23,11 +23,6 @@ def cat_data_loader():
 def flatten_data(x_train_orig, y_train_orig, x_test_orig, y_test_orig, classes):
     x_train = x_train_orig.reshape(-1, x_train_orig.shape[0])/255
     x_test = x_test_orig.reshape(-1, x_test_orig.shape[0])/255
-    print(x_test.shape)
-    print(y_test_orig.shape)
-
-    print(x_train.shape)
-    print(y_train_orig.shape)
     return x_train, y_train_orig, x_test, y_test_orig, classes
 
 
